@@ -1,0 +1,167 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  display: block;
+}
+.box8,
+.box7 {
+  height: 100%;
+  width: 50%;
+}
+.box4,
+.box5,
+.box6 {
+  height: 50%;
+  width: 33%;
+}
+.box5 {
+  width: 50%;
+  height: 100%;
+}
+.box4,
+.box6 {
+  height: 100%;
+  width: 25%;
+}
+.box1,
+.box3 {
+  width: 25%;
+  height: 100%;
+}
+.box2 {
+  width: 50%;
+  height: 100%;
+  display: flex;
+}
+/* https://www.w3schools.com/cssref/css3_pr_flex-wrap.php */
+.top-div {
+  height: 25%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.minibox2,
+.minibox {
+  height: 100%;
+  width: 50%;
+}
+.middle-div {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.bottom-div {
+  height: 25%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.center-content {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.clickable3 {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.clickable3:hover {
+  cursor: pointer;
+  transform: rotate(10deg);
+}
+
+.clickable3:active {
+  transform: rotateY(180deg); /* Flip effect */
+}
+
+.clickable4 {
+  transition: transform 0.4s ease-in-out, filter 0.3s ease,
+    box-shadow 0.3s ease-in-out;
+  display: inline-block;
+}
+
+.clickable4:hover {
+  cursor: pointer;
+  transform: scale(1.1) rotate(10deg); /* Slight scale-up and rotation */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add a subtle shadow on hover */
+}
+
+.clickable4:active {
+  transform: rotateY(180deg) scale(0.95); /* Flip effect with a slight scale-down */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Darker shadow during active state */
+}
+
+/* colors */
+.green {
+  background-color: #008d24;
+}
+.light_blue {
+  background-color: #0b69c0;
+}
+.purple {
+  background-color: #3a246d;
+}
+.red {
+  background-color: #ca1b22;
+}
+.orange {
+  background-color: #ea6626;
+}
+.black {
+  background-color: #000000;
+}
+.white {
+  background-color: #ffffff;
+}
+.light-grey {
+  background-color: #a9a9a9;
+}
+.dark-grey {
+  background-color: #000000;
+}
+.yellow {
+  background-color: yellow;
+}
+.pink {
+  background-color: pink;
+}
+.blue {
+  background-color: blue;
+}
+.custom-font {
+  color: #ffffff;
+}
+@media (max-width: 650px) {
+  .box1 {
+    order: 3;
+  }
+  .box2 {
+    order: 1;
+  }
+  .box3 {
+    order: 2;
+  }
+}
+@media (max-width: 400px) {
+  .box4 {
+    width: 50%;
+    display: none;
+  }
+  .box5 {
+    width: 100%;
+    order: -1;
+  }
+  .box6 {
+    width: 50%;
+    display: none;
+  }
+  p {
+    font-size: 12px;
+  }
+}
